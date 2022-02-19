@@ -18,7 +18,7 @@ with open ("SAMPLE.txt") as data:
     for i in range (10):  #Εξαγωγή των δημοφιλέστερων λέξεων
         position = containerTIMES.index(max(containerTIMES)) #Αν κάποιες δημοφιλέστερες λέξεις εμφανίζονται ίδιο αριθμό φορών
                                                              #τότε πρώτες επιλέγονται αυτές που είναι αριστερότερα στη λίστα containerWORDS
-        print("Η ", i+1, "η συνιθέστερη ΛΕΞΗ είναι η \"", containerWORDS.pop(position), "\"")
+        print("Η", str(i+1) + "η συνιθέστερη ΛΕΞΗ είναι η \"", containerWORDS.pop(position), "\"")
         containerTIMES.pop(position)
     
     def startletters(num): #Υπολογιστής συνηθέστερης αρχικής 2αδας ή 3αδας
@@ -34,7 +34,7 @@ with open ("SAMPLE.txt") as data:
             containerTIMES.append(1)
      for i in range (3):   #Εξαγωγή των συνιθέστερων αρχικών συνδυασμών γραμμάτων
         position = containerTIMES.index(max(containerTIMES))
-        print("Η ", i+1, "η", num,"αδα αρχικών ΓΡΑΜΜΑΤΩΝ είναι η \"", containerLETTERS.pop(position), "\"")
+        print("Η", str(i+1)+"η", num,"αδα αρχικών ΓΡΑΜΜΑΤΩΝ είναι η \"", containerLETTERS.pop(position), "\"")
         containerTIMES.pop(position)
     print("-------------") #Γραμμές για την καλύτερη εμφάνιση των αποτελεσμάτων
     startletters(2)  #Απάντηση  ii) ερωτήματος
