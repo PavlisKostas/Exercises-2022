@@ -56,6 +56,7 @@ with open("SAMPLE.txt") as data:
         datas.remove("") 
 
     tableLENTH, tableNUMBER = pinakes()
+    print("Μετά την επεξεργασία εξάγονται τα ακόλουθα στατιστικά:")
     for k in range(len(tableNUMBER)):  #Προβολή των αποτελεσμάτων σε φθήνουσα σειρά του πλήθους λέξεων του κάθε διαφορετικού μήκους (Προσωπική Επιλογή για καλύτερη εμφάνιση)
         position = tableNUMBER.index(max(tableNUMBER))
         print("Υπάρχουν", tableNUMBER.pop(position), "λέξεις των", tableLENTH.pop(position), "γραμμάτων.")
