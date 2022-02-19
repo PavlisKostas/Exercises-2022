@@ -28,7 +28,7 @@ with open("SAMPLE.txt") as data:
      superd[p] = 0
      datas[p] = ""
      return p
-
+                        #ΕΠΕΞΕΡΓΑΣΙΑ ΓΙΑ ΑΦΑΙΡΕΣΗ ΖΕΥΓΩΝ ΛΕΞΕΩΝ
     posi = -1
     for i in tableLENTH:
         posi += 1
